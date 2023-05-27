@@ -1,0 +1,112 @@
+[
+  {
+    "id": 1,
+    "nama_alternatif": "Boehm-Rath",
+    "kriteria": {
+      "c1": 3,
+      "c2": 3,
+      "c3": 3,
+      "c4": 3,
+      "c5": 3
+    }
+  },
+  {
+    "id": 2,
+    "nama_alternatif": "Jenkins LLC",
+    "kriteria": {
+      "c1": 3,
+      "c2": 3,
+      "c3": 3,
+      "c4": 3,
+      "c5": 3
+    }
+  },
+  {
+    "id": 3,
+    "nama_alternatif": "Dare-Considine",
+    "kriteria": {
+      "c1": 3,
+      "c2": 3,
+      "c3": 3,
+      "c4": 3,
+      "c5": 3
+    }
+  },
+  {
+    "id": 4,
+    "nama_alternatif": "Mohr-Langosh",
+    "kriteria": {
+      "c1": 3,
+      "c2": 3,
+      "c3": 3,
+      "c4": 3,
+      "c5": 3
+    }
+  },
+  {
+    "id": 5,
+    "nama_alternatif": "Boyer-Boyle",
+    "kriteria": {
+      "c1": 3,
+      "c2": 3,
+      "c3": 3,
+      "c4": 3,
+      "c5": 3
+    }
+  },
+  {
+    "id": 6,
+    "nama_alternatif": "Ruecker-Berge",
+    "kriteria": {
+      "c1": 3,
+      "c2": 3,
+      "c3": 3,
+      "c4": 3,
+      "c5": 3
+    }
+  },
+  {
+    "id": 7,
+    "nama_alternatif": "Kozey, Ernser and Keebler",
+    "kriteria": {
+      "c1": 3,
+      "c2": 3,
+      "c3": 3,
+      "c4": 3,
+      "c5": 3
+    }
+  },
+  {
+    "id": 8,
+    "nama_alternatif": "McKenzie, Stoltenberg and Maggio",
+    "kriteria": {
+      "c1": 3,
+      "c2": 3,
+      "c3": 3,
+      "c4": 3,
+      "c5": 3
+    }
+  },
+  {
+    "id": 9,
+    "nama_alternatif": "Mertz Inc",
+    "kriteria": {
+      "c1": 3,
+      "c2": 3,
+      "c3": 3,
+      "c4": 3,
+      "c5": 3
+    }
+  },
+  {
+    "id": 10,
+    "nama_alternatif": "Shields-Fahey",
+    "kriteria": {
+      "c1": 3,
+      "c2": 3,
+      "c3": 3,
+      "c4": 3,
+      "c5": 3
+    }
+  }
+]

@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -13,16 +13,7 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+
 
 .App-link {
   color: #61dafb;
@@ -35,4 +26,88 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App-header {
+  background-color: #609966;
+  /* color: #edf1d6; */
+}
+
+.App-title {
+  font-weight: 600;
+  font-size: x-large;
+  color: #edf1d6 !important;
+  margin-bottom: 0.25rem;
+  margin-right: 0.8rem;
+  text-decoration: none;
+}
+
+.App-navigation {
+  margin: 0.8rem 0.5rem;
+  text-decoration: none;
+  color: #edf1d6 !important;
+}
+
+.App-navigation:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: #eeeeee !important;
+  padding: 5rem;
+}
+
+.table-card {
+  background-color: white;
+  margin: 5rem;
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+thead {
+  background-color: #9dc08b;
+  color: white;
+}
+
+#dropdown-basic {
+  border-radius: 1rem;
+  background-color: #609966;
+  border: none;
+  color: #edf1d6;
+  font-weight: 450;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  margin: 0.2rem 0.8rem;
+}
+
+.fill-button {
+  background-color: #609966 !important;
+  color: white;
+  padding: 0.8rem;
+  border: none !important;
+  border-radius: 1rem;
+}
+
+.fill-button:hover {
+  background-color: white !important;
+  color: #609966 !important;
+  /* padding: 0.8rem; */
+  border: solid #609966 1px !important;
+  /* border-radius: 1rem; */
+}
+
+.edit-button {
+  color: white !important;
+  margin: 0.2rem;
+}
+
+.delete-button {
+  margin: 0.2rem;
+}
+
+.add-alternative {
+  /* margin: auto; */
+  /* float: right; */
 }
