@@ -59,8 +59,8 @@ body {
 
 .table-card {
   background-color: white;
-  margin: 5rem;
-  padding: 2rem;
+  margin: 4rem 2rem;
+  padding: 2rem 2rem 5rem;
   border-radius: 1rem;
 }
 
@@ -110,4 +110,72 @@ thead {
 .add-alternative {
   /* margin: auto; */
   /* float: right; */
+  float: right;
+}
+
+.hitung {
+  margin: 0.5rem 1rem 1rem;
+  float: right;
+  padding: 0.5rem 1rem !important;
+}
+
+.title-hasil {
+  margin-bottom: 1rem;
+}
+
+.login-card {
+  background-color: white;
+  width: 30%;
+  padding: 1.5rem;
+  margin: auto;
+  margin-top: 5rem;
+  border-radius: 1rem;
+  text-align: center;
+}
+
+.login-title {
+  margin-bottom: 1.2rem;
+}
+
+.input-login {
+  margin: 0.6rem 0;
+  width: 90%;
+}
+
+/* span:after,
+span:before {
+  content: '\00a0\00a0\00a0\00a0\00a0';
+  text-decoration: line-through;
+} */
+
+.login-button {
+  margin: 1rem 0 0;
+}
+
+.or-wrap {
+  margin: 1rem;
+}
+
+.login-or {
+  display: flex;
+  flex-direction: row;
+}
+.login-or:before,
+.login-or:after {
+  content: '';
+  flex: 1 1;
+  border-bottom: 1px solid;
+  margin: auto;
+}
+.login-or:before {
+  margin-right: 10px;
+}
+.login-or:after {
+  margin-left: 10px;
+}
+
+.input-alternative {
+  margin: 0.5rem;
+  width: 90%;
+  padding: 0.3rem;
 }

@@ -23,7 +23,7 @@ export const Login = () => {
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
-        alert('Berhasil Sign Up!');
+        alert('Berhasil Login!');
 
         // ...
       })
@@ -36,16 +36,17 @@ export const Login = () => {
   };
 
   return (
-    <div>
-      <h1>LOGIN PAGE</h1>
-      <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-      <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-      <Button variant="success" onClick={signIn}>
+    <div className="login-card">
+      <h2 className="login-title">Login</h2>
+      <input type="email" className="input-login" placeholder="Email" onChange={(e) => setEmail(e.target.value)} /> <br />
+      <input type="password" className="input-login" placeholder="Password" onChange={(e) => setPassword(e.target.value)} /> <br />
+      <Button variant="success" className="login-button" onClick={signIn}>
         Login
       </Button>
-
-      <p>Sign in with Google</p>
-      <Button onClick={signInWithGoogle}>Sign In</Button>
+      <div className="or-wrap">
+        <p className="login-or">or</p>
+      </div>
+      <Button onClick={signInWithGoogle}>Login With Google</Button>
     </div>
   );
 };

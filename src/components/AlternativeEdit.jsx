@@ -3,11 +3,11 @@ import Button from 'react-bootstrap/Button';
 // import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
-export const AlternativeInput = ({ show, handleClose }) => {
+export const AlternativeEdit = ({ show, handleClose }) => {
   return (
     <Modal show={show} onHide={handleClose}>
       <Modal.Header closeButton>
-        <Modal.Title>Tambah Alternatif</Modal.Title>
+        <Modal.Title>Ubah Alternatif</Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <label htmlFor="" className="input-alternative">
@@ -40,7 +40,7 @@ export const AlternativeInput = ({ show, handleClose }) => {
           Tutup
         </Button>
         <Button variant="primary" className="fill-button" onClick={handleClose}>
-          Tambah Alternatif
+          Ubah Alternatif
         </Button>
       </Modal.Footer>
     </Modal>

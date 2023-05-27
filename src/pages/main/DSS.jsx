@@ -10,6 +10,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import { AlternativeInput } from '../../components/AlternativeInput';
 import React, { useState } from 'react';
 import { Button } from 'react-bootstrap';
+import { ResultTable } from '../../components/ResultTable';
 
 export const DSS = () => {
   const [user] = useAuthState(auth);
@@ -22,22 +23,31 @@ export const DSS = () => {
   return (
     <div>
       {user ? (
-        <div className="table-card">
-          <Container>
-            <Row>
-              <Col>
-                <h2>Nilai Matriks</h2>
-              </Col>
-              <Col className="add-alternative">
-                <Button onClick={handleShow} className="fill-button">
-                  +Alternatif
-                </Button>
-              </Col>
-            </Row>
-          </Container>
-          <MatrixTable></MatrixTable>
-          <AlternativeInput show={show} handleClose={handleClose}></AlternativeInput>
-        </div>
+        <>
+          <div className="table-card">
+            <Container>
+              <Row>
+                <Col>
+                  <h2>Nilai Matriks</h2>
+                </Col>
+                <Col>
+                  <Button onClick={handleShow} className="fill-button add-alternative">
+                    +Alternatif
+                  </Button>
+                </Col>
+              </Row>
+            </Container>
+            <MatrixTable></MatrixTable>
+            <AlternativeInput show={show} handleClose={handleClose}></AlternativeInput>
+            <Button className="fill-button hitung" type="submit">
+              Hitung
+            </Button>
+          </div>
+          <div className="table-card">
+            <h2 className="title-hasil">Hasil Perhitungan TOPSIS</h2>
+            <ResultTable></ResultTable>
+          </div>
+        </>
       ) : (
         <h2>BELUM LOGIN</h2>
       )}

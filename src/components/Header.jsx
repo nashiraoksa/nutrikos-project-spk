@@ -12,6 +12,8 @@ import { signOut } from 'firebase/auth';
 export const Header = () => {
   const [user] = useAuthState(auth);
 
+  // const defaultProfile = './default.jpg';
+
   const logOut = async () => {
     await signOut(auth);
   };
@@ -44,7 +46,7 @@ export const Header = () => {
             <Nav>
               <Dropdown>
                 <Dropdown.Toggle variant="light" id="dropdown-basic">
-                  <img src={user?.photoURL || ''} width="40" height="40" className="profile-pic"></img>
+                  <img src={user?.photoURL || 'https://i.ibb.co/dcqtTqN/user.png'} alt="" width="40" height="40" className="profile-pic"></img>
                   {user?.displayName || user?.email}
                 </Dropdown.Toggle>
 

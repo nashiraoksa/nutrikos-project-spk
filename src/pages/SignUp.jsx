@@ -38,16 +38,17 @@ export const SignUp = () => {
   };
 
   return (
-    <div>
-      <h1>SIGN UP PAGE</h1>
-      <input type="email" placeholder="Email" onChange={(e) => setEmail(e.target.value)} />
-      <input type="password" placeholder="Password" onChange={(e) => setPassword(e.target.value)} />
-      <Button variant="success" onClick={signUp}>
+    <div className="login-card">
+      <h2 className="login-title">Sign Up</h2>
+      <input type="email" className="input-login" placeholder="Email" onChange={(e) => setEmail(e.target.value)} /> <br />
+      <input type="password" className="input-login" placeholder="Password" onChange={(e) => setPassword(e.target.value)} /> <br />
+      <Button variant="success" className="login-button" onClick={signUp}>
         Sign Up
       </Button>
-
-      <p>Sign in with Google</p>
-      <Button onClick={signInWithGoogle}>Sign In</Button>
+      <div className="or-wrap">
+        <p className="login-or">or</p>
+      </div>
+      <Button onClick={signInWithGoogle}>Sign Up With Google</Button>
     </div>
   );
 };
