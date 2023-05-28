@@ -1,7 +1,8 @@
 import DeleteButton from './DeleteButton';
 import EditButton from './EditButton';
+import { Button } from 'react-bootstrap';
 
-export const AlternativeTableBody = ({ row, nama, value }) => {
+export const AlternativeTableBody = ({ row, nama, value, handleDelete }) => {
   return (
     <tr>
       <td>{row}</td>
@@ -9,8 +10,12 @@ export const AlternativeTableBody = ({ row, nama, value }) => {
       <td>{value}</td>
       <td>
         <EditButton text="Edit"></EditButton>
-        <DeleteButton text="Delete"></DeleteButton>
+        <Button variant="danger" onClick={() => handleDelete()}>
+          Delete
+        </Button>
       </td>
     </tr>
   );
 };
+
+// <DeleteButton text="Delete"></DeleteButton>
