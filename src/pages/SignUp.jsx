@@ -11,11 +11,10 @@ export const SignUp = () => {
   const signInWithGoogle = async () => {
     // result contain information about user who signed in
     const result = await signInWithPopup(auth, provider);
-    // console.log(result);
+
     navigate('/');
   };
 
-  // const auth = getAuth();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -26,13 +25,11 @@ export const SignUp = () => {
         const user = userCredential.user;
         console.log(user);
         alert('Berhasil Sign Up!');
-        // ...
       })
       .catch((error) => {
         const errorCode = error.code;
-        // const errorMessage = error.message;
+
         alert(errorCode);
-        // ..
       });
     navigate('/');
   };

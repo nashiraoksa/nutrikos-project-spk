@@ -1,9 +1,9 @@
-export const ResultBody = ({ nama, hasil, ranking }) => {
+export const ResultBody = ({ nama, hasil}) => {
   return (
     <tr>
+      <td></td>
       <td>{nama}</td>
       <td>{hasil}</td>
-      <td>{ranking}</td>
     </tr>
   );
 };

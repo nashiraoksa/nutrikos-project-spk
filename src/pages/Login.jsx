@@ -11,25 +11,22 @@ export const Login = () => {
   const signInWithGoogle = async () => {
     // result contain information about user who signed in
     const result = await signInWithPopup(auth, provider);
-    // console.log(result);
+
     navigate('/');
   };
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  // const auth = getAuth();
+
   const signIn = () => {
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in
         const user = userCredential.user;
         alert('Berhasil Login!');
-
-        // ...
       })
       .catch((error) => {
         const errorCode = error.code;
-        // const errorMessage = error.message;
         alert(errorCode);
       });
     navigate('/');

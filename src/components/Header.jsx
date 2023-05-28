@@ -2,8 +2,6 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Dropdown from 'react-bootstrap/Dropdown';
-// import Button from 'react-bootstrap/Button';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
 import { auth } from '../config/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -11,8 +9,6 @@ import { signOut } from 'firebase/auth';
 
 export const Header = () => {
   const [user] = useAuthState(auth);
-
-  // const defaultProfile = './default.jpg';
 
   const logOut = async () => {
     await signOut(auth);
