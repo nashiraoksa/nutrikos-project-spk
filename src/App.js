@@ -6,6 +6,7 @@ import { Home } from './pages/main/Home';
 import { DSS } from './pages/main/DSS';
 import { Login } from './pages/Login';
 import { SignUp } from './pages/SignUp';
+import { Guide } from './pages/main/Guide';
 
 import { Header } from './components/Header';
 
@@ -16,6 +17,7 @@ function App() {
         <Header></Header>
         <Routes>
           <Route path="/" element={<Home></Home>}></Route>
+          <Route path="/guide" element={<Guide></Guide>}></Route>
           <Route path="/login" element={<Login></Login>}></Route>
           <Route path="/signUp" element={<SignUp></SignUp>}></Route>
           <Route path="/DSS" element={<DSS></DSS>}></Route>

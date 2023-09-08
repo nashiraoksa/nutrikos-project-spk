@@ -4,6 +4,7 @@ import { signInWithPopup } from 'firebase/auth';
 import { useNavigate } from 'react-router-dom';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 import { useState } from 'react';
+import { FaGoogle } from 'react-icons/fa';
 
 export const Login = () => {
   const navigate = useNavigate();
@@ -12,7 +13,7 @@ export const Login = () => {
     // result contain information about user who signed in
     const result = await signInWithPopup(auth, provider);
 
-    navigate('/');
+    navigate('/DSS');
   };
 
   const [email, setEmail] = useState('');
@@ -29,7 +30,7 @@ export const Login = () => {
         const errorCode = error.code;
         alert(errorCode);
       });
-    navigate('/');
+    navigate('/DSS');
   };
 
   return (
@@ -37,13 +38,15 @@ export const Login = () => {
       <h2 className="login-title">Login</h2>
       <input type="email" className="input-login" placeholder="Email" onChange={(e) => setEmail(e.target.value)} /> <br />
       <input type="password" className="input-login" placeholder="Password" onChange={(e) => setPassword(e.target.value)} /> <br />
-      <Button variant="success" className="login-button" onClick={signIn}>
+      <Button variant="success" className="fill-button" onClick={signIn}>
         Login
       </Button>
       <div className="or-wrap">
         <p className="login-or">or</p>
       </div>
-      <Button onClick={signInWithGoogle}>Login With Google</Button>
+      <Button onClick={signInWithGoogle}>
+        <FaGoogle className="google"></FaGoogle> Login With Google
+      </Button>
     </div>
   );
 };

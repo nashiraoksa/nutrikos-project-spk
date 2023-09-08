@@ -67,7 +67,7 @@ export const AlternativeInput = ({ show, handleClose, handle }) => {
             Serat
           </label>
           <input type="number" className="input-alternative" placeholder="Serat (Masukkan skala 1-5)" max={5} min={1} {...register('kriteria6')} /> <br />
-          <input type="submit" className="fill-button" onClick={handle} />
+          <input type="submit" className="fill-button submit-alt" onClick={handle} />
         </form>
       </Modal.Body>
     </Modal>

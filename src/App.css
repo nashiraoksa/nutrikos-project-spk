@@ -1,6 +1,7 @@
 .App-header {
   background-color: #609966;
   /* color: #edf1d6; */
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 2px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
 .App-title {
@@ -24,12 +25,18 @@
 
 body {
   background-color: #eeeeee !important;
-  padding: 5rem;
+  padding-top: 4rem;
+  /* border: solid black 2px; */
+  /* padding: 0 !important; */
+  /* margin: 0 !important; */
+  /* margin: auto; */
+  /* padding-right: 0 !important; */
+  /* right: 0; */
 }
 
 .table-card {
   background-color: white;
-  margin: 4rem 2rem;
+  margin: 5rem;
   padding: 2rem 2rem 5rem;
   border-radius: 1rem;
 }
@@ -55,9 +62,10 @@ thead {
 .fill-button {
   background-color: #609966 !important;
   color: white;
-  padding: 0.8rem;
+  padding: 0.5rem 1.2rem;
   border: none !important;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
+  margin-top: 1rem;
 }
 
 .fill-button:hover {
@@ -66,6 +74,23 @@ thead {
   /* padding: 0.8rem; */
   border: solid #609966 1px !important;
   /* border-radius: 1rem; */
+}
+
+.ghost-button {
+  background-color: white !important;
+  color: #609966 !important;
+  /* padding: 0.8rem; */
+  border: solid #609966 1px !important;
+  /* border-radius: 1rem; */
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.5rem;
+}
+
+.ghost-button:hover {
+  background-color: #609966 !important;
+  color: white !important;
+  /* border: none !important; */
+  /* margin-top: 1rem; */
 }
 
 .edit-button {
@@ -81,6 +106,8 @@ thead {
   /* margin: auto; */
   /* float: right; */
   float: right;
+  margin-top: 0.1rem;
+  margin-bottom: 1.8rem;
 }
 
 .hitung {
@@ -101,6 +128,7 @@ thead {
   margin-top: 5rem;
   border-radius: 1rem;
   text-align: center;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.05), 0 2px 10px 0 rgba(0, 0, 0, 0.05);
 }
 
 .login-title {
@@ -109,12 +137,13 @@ thead {
 
 .input-login {
   margin: 0.6rem 0;
+  padding: 0.3rem;
   width: 90%;
 }
 
-.login-button {
+/* .login-button {
   margin: 1rem 0 0;
-}
+} */
 
 .or-wrap {
   margin: 1rem;
@@ -139,7 +168,7 @@ thead {
 }
 
 .input-alternative {
-  margin: 0.5rem;
+  margin: 0 0.5rem 0.5rem;
   width: 90%;
   padding: 0.3rem;
 }
@@ -152,4 +181,125 @@ thead {
 .matrix-table td:first-child:before {
   counter-increment: serial-number; /* Increment the serial number counter */
   content: counter(serial-number); /* Display the counter */
+}
+
+.home-img {
+  width: 51.8rem;
+  /* width: 30rem; */
+  filter: saturate(85%) contrast(92%) hue-rotate(5deg) drop-shadow(8px 8px 10px gray) opacity();
+  margin-top: 0.1rem;
+}
+
+.col {
+  /* border: solid black 1px; */
+  /* margin: 0 !important; */
+  padding: 0 !important;
+}
+
+.conts {
+  margin-right: 0 !important;
+  /* padding: 0 !important; */
+  /* background-image: url('https://i.ibb.co/5WRgX57/HD.png'); */
+}
+
+.welcome {
+  padding: 8rem 0;
+}
+
+.not-login {
+  padding: 12rem;
+  text-align: center;
+  color: grey;
+  /* border: solid black; */
+  width: 80%;
+  margin: auto;
+}
+
+.home-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+  /* font-family: 'Times New Roman', Times, serif; */
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  font-weight: 500;
+  font-size: 70px;
+  /* color: #4a8550; */
+}
+
+.home-button {
+  margin-top: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.google {
+  /* padding: 1rem; */
+  padding-bottom: 0.1rem;
+  /* padding-top: 0; */
+  margin-right: 0.3rem;
+}
+
+.guide {
+  /* margin: 2rem; */
+  padding: 5rem 5rem 2rem;
+  text-align: justify;
+}
+.guide-child {
+  text-align: justify;
+  /* margin: 2rem; */
+  padding: 2rem 5rem;
+}
+
+.table-card-guide {
+  background-color: white;
+  margin: 0 5rem;
+  padding: 2rem 2rem 5rem;
+  border-radius: 1rem;
+}
+
+.submit-alt {
+  /* text-align: right; */
+  /* right: 0; */
+  margin: 2rem 2rem 1rem;
+  display: flex;
+  float: right;
+}
+
+.footer {
+  background-color: #9dc08b !important;
+  color: #edf1d6 !important;
+  margin-top: 5rem;
+}
+
+.guide h3 {
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+.guide-child h3 {
+  margin-top: 2rem;
+  margin-left: 1.5rem;
+}
+
+.guide-child h4 {
+  margin-left: 2rem;
+}
+
+.guide p,
+.guide-child p {
+  margin-top: 1.3rem;
+  margin-left: 2rem;
+}
+
+.guide-title {
+  margin-top: 3rem;
+}
+
+.g-title {
+  background-color: #609966;
+  width: 45%;
+  color: white;
+  padding: 0.5rem 1.2rem;
+  border-radius: 1.5rem;
+}
+
+.tab-mid {
+  text-align: center;
 }

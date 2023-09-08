@@ -8,6 +8,7 @@ import Button from 'react-bootstrap/Button';
 import { AlternativeInput } from '../../components/AlternativeInput';
 import { MatrixBody } from '../../components/MatrixBody';
 import { ResultBody } from '../../components/ResultBody';
+import { Footer } from '../../components/Footer';
 // firebase
 import { auth } from '../../config/firebase';
 import { useAuthState } from 'react-firebase-hooks/auth';
@@ -208,7 +209,9 @@ export const DSS = () => {
               <thead>
                 <tr>
                   <th colSpan={2}></th>
-                  <th colSpan={6}>Kriteria</th>
+                  <th colSpan={6} className="tab-mid">
+                    Kriteria
+                  </th>
                   <th></th>
                 </tr>
                 <tr>
@@ -258,9 +261,12 @@ export const DSS = () => {
               </tbody>
             </Table>
           </div>
+          <Footer></Footer>
         </>
       ) : (
-        <h2>BELUM LOGIN</h2>
+        <div className="not-login">
+          <h2>Silakan Login/Sign Up untuk dapat menggunakan fitur DSS.</h2>
+        </div>
       )}
     </div>
   );
